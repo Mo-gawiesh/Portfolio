@@ -1,0 +1,161 @@
+@import './css/variables.css';
+@import './css/hero.css';
+@import './css/about.css';
+@import './css/portfolio.css';
+@import './css/services.css';
+@import './css/testimonials.css';
+@import './css/contact.css';
+
+/* RTL Support Override */
+[dir="rtl"] .hero-wrapper {
+  flex-direction: row-reverse;
+  /* Flip Hero Layout for RTL */
+}
+
+[dir="rtl"] .hero-content {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .hero-title,
+[dir="rtl"] .hero-subtitle,
+[dir="rtl"] .hero-badge {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-actions {
+  flex-direction: row;
+  /* Keep buttons in row */
+}
+
+[dir="rtl"] .marquee-content {
+  animation-direction: reverse;
+  /* Marquee scrolls naturally for RTL */
+}
+
+/* Ensure arrow icons flip in RTL */
+[dir="rtl"] .fa-arrow-right {
+  transform: rotate(180deg);
+}
+
+/* GLOBAL RESET & BASE STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  /* Use variable from variables.css */
+  color: var(--text-main);
+  /* Use variable from variables.css */
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* GLOBAL LAYOUT HELPER */
+.container,
+.hero-wrapper {
+  max-width: 1800px;
+  /* Much wider cap */
+  width: 95%;
+  /* Occupy 95% of the screen width */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  /* Center the inner content */
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Inner Navbar Container to match Hero width */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  /* Match global width */
+  max-width: 1800px;
+  /* Match global max-width */
+  padding: 0 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* RTL logo fix */
+[dir="rtl"] .logo {
+  flex-direction: row-reverse;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links a.active-link {
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-links a.active-link::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin-right: 8px;
+}
