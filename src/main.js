@@ -10,6 +10,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import './css/admin.css'
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger)

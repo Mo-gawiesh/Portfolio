@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Designer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600&family=Outfit:wght@700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="./assets/index-XJo3-bwV.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/firebase-SK6W4cr9.js">
+  <link rel="modulepreload" crossorigin href="./assets/swiper-BfCQxxKj.js">
+  <link rel="modulepreload" crossorigin href="./assets/gsap-0lJgtTtq.js">
+  <link rel="modulepreload" crossorigin href="./assets/aos-CwHFA2cp.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BzBElwNg.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-new">
+        <div class="nav-container-new">
+            <div class="logo-new">
+                <span class="logo-name" data-i18n="first_name">Mohamed</span>
+                <span class="logo-dot">.</span>
+            </div>
+
+            <div class="nav-links-new">
+                <a href="#home" class="active" data-i18n="nav_home">Home</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#portfolio" data-i18n="nav_projects">Projects</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <div class="nav-extra">
+                <div class="lang-switcher-new">
+                    <select id="lang-select">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <a href="#contact" class="nav-cta" data-i18n="btn_touch">Let's Talk</a>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero-new" id="home">
+        <div class="hero-grid">
+            <!-- Top Left: Brand/Logo Area -->
+            <div class="hero-item brand-box">
+                <div class="brand-header">
+                    <span class="brand-label" data-i18n="hero_label">//Graphic designer</span>
+                    <div class="brand-logo">
+                        <span class="brand-name" data-i18n="first_name">gawish</span>
+                        <span class="brand-suffix" data-i18n="hero_suffix">creative</span>
+                    </div>
+                </div>
+                <h1 class="hero-name-big">
+                    <span class="name-first" data-i18n="first_name">Mohamed</span>
+                    <span class="name-last" data-i18n="last_name">Gawish</span>
+                </h1>
+                <div class="hero-tags">
+                    <span class="tag"><i class="fa-solid fa-plus text-red"></i> <span
+                            data-i18n="tag_ui">UI/UX</span></span>
+                    <span class="tag"><i class="fa-solid fa-plus text-red"></i> <span
+                            data-i18n="tag_web">Web</span></span>
+                    <span class="tag"><i class="fa-solid fa-plus text-red"></i> <span data-i18n="tag_social">Social
+                            Media</span></span>
+                </div>
+                <p class="hero-subtitle-new" data-i18n="hero_subtitle">I'm a Graphic Designer & Software Engineer based
+                    in Russia, combining visual creativity with technical power to build exceptional digital
+                    experiences.</p>
+            </div>
+
+            <!-- Top Right: Image Area -->
+            <div class="hero-item image-box">
+                <div class="user-year-badge">2026</div>
+                <img src="./assets/user-portrait-CZZG7Tmn.png" alt="Mohamed Gawish" class="hero-user-img">
+            </div>
+
+            <!-- Stats Row -->
+            <div class="hero-item stat-box">
+                <div class="stat-content">
+                    <span class="stat-val">50+</span>
+                    <div class="stat-info">
+                        <span class="stat-txt" data-i18n="stat_realized">Realized</span>
+                        <span class="stat-sub" data-i18n="stat_projects_sub">projects</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <div class="hero-item stat-box">
+                <div class="stat-content">
+                    <span class="stat-val">10+</span>
+                    <div class="stat-info">
+                        <span class="stat-txt" data-i18n="stat_awards">Awards</span>
+                        <span class="stat-sub" data-i18n="stat_won">won</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <div class="hero-item stat-box">
+                <div class="stat-content">
+                    <span class="stat-val">5+</span>
+                    <div class="stat-info">
+                        <span class="stat-txt" data-i18n="stat_experience">Years of</span>
+                        <span class="stat-sub" data-i18n="stat_exp_sub">experience</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <div class="hero-item stat-box">
+                <div class="stat-content">
+                    <span class="stat-val">24/7</span>
+                    <div class="stat-info">
+                        <span class="stat-txt" data-i18n="stat_support">Support</span>
+                        <span class="stat-sub" data-i18n="stat_available">available</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- About & Services Bento Grid -->
+    <section class="bento-section" id="about">
+        <div class="bento-grid-main">
+            <!-- About Card -->
+            <div class="bento-card about-card" data-aos="fade-up">
+                <div class="bento-card-header">
+                    <span class="bento-label" data-i18n="about_label">//About me</span>
+                    <i class="fa-solid fa-star bento-icon-red"></i>
+                </div>
+                <h3 class="bento-title" data-i18n="about_head">Designing with Passion</h3>
+                <p class="bento-text" data-i18n="about_text">
+                    I am a dedicated graphic designer with over 5 years of experience in creating visual identities and
+                    digital experiences.
+                    I specialize in UI/UX design, branding, and motion graphics.
+                </p>
+                <div class="bento-stats">
+                    <div class="bento-stat">
+                        <span class="bento-stat-num">50+</span>
+                        <span class="bento-stat-label" data-i18n="stat_projects_label">Projects</span>
+                    </div>
+                    <div class="bento-stat">
+                        <span class="bento-stat-num">5+</span>
+                        <span class="bento-stat-label" data-i18n="stat_years_label">Years</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image/Portrait Card -->
+            <div class="bento-card portrait-card" data-aos="fade-up">
+                <img src="./assets/user-portrait-CZZG7Tmn.png" alt="Mohamed" class="bento-portrait">
+                <div class="portrait-overlay">
+                    <span data-i18n="about_title">A bit about me</span>
+                </div>
+            </div>
+
+            <!-- Services Card 1 -->
+            <div class="bento-card service-card-new" id="services" data-aos="fade-up">
+                <div class="bento-card-header">
+                    <span class="bento-label" data-i18n="serv_label">//Services</span>
+                    <i class="fa-solid fa-plus bento-icon-red"></i>
+                </div>
+                <h3 class="bento-title" data-i18n="serv_social_title">Social Media</h3>
+                <p class="bento-text-sm" data-i18n="serv_social_desc">Professional social media management and content
+                    creation.</p>
+                <i class="fa-solid fa-arrow-up-right-from-square bento-arrow"></i>
+            </div>
+
+            <!-- Services Card 2 -->
+            <div class="bento-card service-card-new" data-aos="fade-up">
+                <div class="bento-card-header">
+                    <span class="bento-label" data-i18n="serv_label">//Services</span>
+                    <i class="fa-solid fa-plus bento-icon-red"></i>
+                </div>
+                <h3 class="bento-title" data-i18n="serv_ads_title">Social Ads</h3>
+                <p class="bento-text-sm" data-i18n="serv_ads_desc">Strategic social media advertising to grow your
+                    audience and sales.</p>
+                <i class="fa-solid fa-arrow-up-right-from-square bento-arrow"></i>
+            </div>
+
+            <!-- Services Card 3 -->
+            <div class="bento-card service-card-new featured" data-aos="fade-up">
+                <div class="bento-card-header">
+                    <span class="bento-label" data-i18n="serv_label">//Services</span>
+                    <i class="fa-solid fa-bolt bento-icon-red"></i>
+                </div>
+                <h3 class="bento-title" data-i18n="serv_web_title">Web Design</h3>
+                <p class="bento-text-sm" data-i18n="serv_web_desc">Responsive and modern website designs that focus on
+                    user experience and conversion.</p>
+                <i class="fa-solid fa-arrow-up-right-from-square bento-arrow"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-header" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="port_title">Selected Works</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web Design</button>
+                <button class="filter-btn" data-filter="social" data-i18n="filter_social">Social Media</button>
+            </div>
+        </div>
+
+        <div id="portfolio-grid" class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+            <!-- Projects will be loaded dynamically from Firebase -->
+            <div class="loading-spinner">Loading projects...</div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+
+
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-header" data-aos="fade-up">
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
+            <!-- Contact Info Bento Card -->
+            <div class="contact-info-card">
+                <div class="bento-card-header">
+                    <span class="bento-label" data-i18n="contact_info_label">//Contact Info</span>
+                    <i class="fa-solid fa-paper-plane bento-icon-red"></i>
+                </div>
+                <h3 class="contact-info-title" data-i18n="contact_info_head">Let's work together</h3>
+                <p class="contact-info-text" data-i18n="contact_info_text">Have a project in mind or just want to say
+                    hi? Feel free to reach out!</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <span class="contact-item-label" data-i18n="contact_email">Email me</span>
+                            <a href="mailto:gawishwashere@gmail.com"
+                                class="contact-item-value">gawishwashere@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <span class="contact-item-label" data-i18n="contact_phone">Call me</span>
+                            <a href="tel:+79963356834" class="contact-item-value">+7 (996) 335-68-34</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <span class="contact-item-label" data-i18n="contact_whatsapp">WhatsApp</span>
+                            <a href="https://wa.me/79963356834" target="_blank" class="contact-item-value">+7 (996)
+                                335-68-34</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <span class="contact-item-label" data-i18n="contact_location">Location</span>
+                            <span class="contact-item-value">Russia / Egypt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social-section">
+                    <span class="social-label" data-i18n="social_follow">Follow me</span>
+                    <div class="contact-socials">
+                        <a href="https://www.behance.net/mohamedgawiesh" target="_blank" class="social-link"><i
+                                class="fa-brands fa-behance"></i></a>
+                        <a href="https://www.instagram.com/mogawish4d?igsh=cXVoaDR3eDJ0aW9u" target="_blank"
+                            class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Bento Card -->
+            <div class="contact-form-card">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label" data-i18n="lbl_name">Name</label>
+                            <div class="input-focus-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label" data-i18n="lbl_email">Email</label>
+                            <div class="input-focus-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" class="form-textarea" placeholder=" " required></textarea>
+                        <label for="message" class="form-label" data-i18n="lbl_msg">Message</label>
+                        <div class="input-focus-line"></div>
+                    </div>
+                    <button type="submit" class="cta-button submit-btn" data-i18n="btn_send">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-new">
+                    <span class="logo-name">gawish</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <p class="footer-desc" data-i18n="footer_desc">Creating digital experiences that matter.</p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#portfolio" data-i18n="nav_projects">Portfolio</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.behance.net/mohamedgawiesh" target="_blank"><i
+                        class="fa-brands fa-behance"></i></a>
+                <a href="https://www.instagram.com/mogawish4d?igsh=cXVoaDR3eDJ0aW9u" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="admin-secret-trigger" class="copyright" data-i18n="footer_rights">&copy; 2026 Mohamed Gawish. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-dashboard" class="admin-dashboard">
+        <div class="admin-sidebar">
+            <div class="admin-header">
+                <h3>Admin Panel</h3>
+                <button id="close-admin" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Auth View -->
+            <div id="admin-auth" class="admin-section">
+                <form id="admin-login-form">
+                    <div class="form-group-admin">
+                        <label>Password</label>
+                        <input type="password" id="admin-password" required>
+                    </div>
+                    <button type="submit" class="admin-btn">Login</button>
+                    <p id="admin-error" class="error-msg"></p>
+                </form>
+            </div>
+
+            <!-- Content View -->
+            <div id="admin-content" class="admin-section hidden">
+                <div class="admin-actions">
+                    <button id="show-add-project" class="admin-btn-accent">Add New Project</button>
+                    <button id="admin-logout" class="admin-btn-outline">Logout</button>
+                </div>
+
+                <div id="admin-project-list" class="admin-project-list">
+                    <!-- Dynamic project management items -->
+                </div>
+            </div>
+
+            <!-- Project Form Modal (Overlay inside sidebar) -->
+            <div id="project-form-container" class="admin-section hidden">
+                <h4 id="form-title">Add/Edit Project</h4>
+                <form id="project-form">
+                    <input type="hidden" id="project-id">
+                    <div class="form-group-admin">
+                        <label>Title</label>
+                        <input type="text" id="project-title" required>
+                    </div>
+                    <div class="form-group-admin">
+                        <label>Category</label>
+                        <select id="project-category">
+                            <option value="web">Web Design</option>
+                            <option value="social">Social Media</option>
+                        </select>
+                    </div>
+                    <div class="form-group-admin">
+                        <label>Image URL</label>
+                        <input type="text" id="project-imageUrl" placeholder="Paste image URL (Cloudinary, etc.)"
+                            required>
+                        <div id="image-preview" class="image-preview"></div>
+                    </div>
+                    <div class="admin-form-btns">
+                        <button type="submit" id="save-project" class="admin-btn">Save Project</button>
+                        <button type="button" id="cancel-project" class="admin-btn-outline">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
